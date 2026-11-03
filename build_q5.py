@@ -105,7 +105,7 @@ git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/en
 ### Step 6: GitHub Remote Configuration & Push
 ```bash
 # Add GitHub remote origin
-git remote add origin https://github.com/rohitraj/devops-lab1-ci.git
+git remote add origin https://github.com/rohitraj1106/Devops-Lab-1.git
 
 # Push main branch with upstream tracking
 git push -u origin main
@@ -180,7 +180,7 @@ git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/en
     story.append(Spacer(1, 6))
 
     story.append(Paragraph("<b>Step 4: Push to Remote GitHub Repository</b>", styles['H2']))
-    story.append(create_code_block("""git remote add origin https://github.com/rohitraj/devops-lab1-ci.git
+    story.append(create_code_block("""git remote add origin https://github.com/rohitraj1106/Devops-Lab-1.git
 git push -u origin main
 git push -u origin feature/enhance-ui-metrics""", styles))
     story.append(Spacer(1, 8))

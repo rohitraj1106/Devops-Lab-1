@@ -46,7 +46,7 @@ def generate_master_markdown():
 **Course:** DevOps Foundations & Continuous Integration  
 **Total Marks:** 40 Marks (7 Assessment Questions)  
 **Submission Date:** {datetime.now().strftime("%B %d, %Y")}  
-**Repository URL:** https://github.com/rohitraj/devops-lab1-ci  
+**Repository URL:** https://github.com/rohitraj1106/Devops-Lab-1  
 
 ---
 

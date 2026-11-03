@@ -40,7 +40,7 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 +-----------------------------------------------------------------------------------+
 |                            1. SOURCE CODE MANAGEMENT (VCS)                        |
 |   Developer Workspace -> git commit -> git push origin main                      |
-|   Repository: https://github.com/rohitraj/devops-lab1-ci                          |
+|   Repository: https://github.com/rohitraj1106/Devops-Lab-1                          |
 +------------------------------------------+----------------------------------------+
                                            |  HTTP POST Webhook Event
                                            v
@@ -103,7 +103,7 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 
 ### Stage 1: Source Control Management (SCM) Checkout
 - **Purpose:** Securely clone the repository at the exact commit hash triggering the build.
-- **Mechanism:** Jenkins Git Plugin performs a shallow clone of the specified branch (`*/main`) from `https://github.com/rohitraj/devops-lab1-ci.git`.
+- **Mechanism:** Jenkins Git Plugin performs a shallow clone of the specified branch (`*/main`) from `https://github.com/rohitraj1106/Devops-Lab-1.git`.
 - **Command / Step:** `checkout scm`
 
 ### Stage 2: Build & Environment Isolation
@@ -206,7 +206,7 @@ def get_q2_story():
     story.append(Paragraph("The system implements a decoupled, event-driven CI/CD architecture:", styles['Body']))
     
     arch_ascii = """+-----------------------------------------------------------------------------+
-| 1. SCM: GitHub Remote (https://github.com/rohitraj/devops-lab1-ci)           |
+| 1. SCM: GitHub Remote (https://github.com/rohitraj1106/Devops-Lab-1)           |
 |    Developer 'git push origin main' -> Triggers GitHub Webhook              |
 +-------------------------------------+---------------------------------------+
                                       | HTTP POST (Payload: commit SHA)

@@ -38,7 +38,7 @@ In the GitHub repository settings (**Settings -> Webhooks -> Add webhook**):
 5. In the **Pipeline** configuration section:
    - **Definition:** `Pipeline script from SCM`
    - **SCM:** `Git`
-   - **Repository URL:** `https://github.com/rohitraj/devops-lab1-ci.git`
+   - **Repository URL:** `https://github.com/rohitraj1106/Devops-Lab-1.git`
    - **Credentials:** GitHub Personal Access Token / SSH credentials
    - **Branch Specifier:** `*/main`
    - **Script Path:** `Jenkinsfile`
@@ -63,7 +63,7 @@ Verbatim console output log proving successful Git checkout and automated execut
 
 ```
 Started by GitHub push by rohitraj
-Obtained Jenkinsfile from git https://github.com/rohitraj/devops-lab1-ci.git
+Obtained Jenkinsfile from git https://github.com/rohitraj1106/Devops-Lab-1.git
 [Pipeline] Start of Pipeline
 [Pipeline] node
 Running on Jenkins in /var/lib/jenkins/workspace/devops-lab1-ci
@@ -81,7 +81,7 @@ The recommended git tool is: NONE
 using credential github-auth-token
  > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/devops-lab1-ci/.git # timeout=10
 Fetching changes from the remote Git repository
- > git config remote.origin.url https://github.com/rohitraj/devops-lab1-ci.git # timeout=10
+ > git config remote.origin.url https://github.com/rohitraj1106/Devops-Lab-1.git # timeout=10
 Fetching upstream changes from origin
  > git fetch --tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
 Checking out Revision 93a862a2b9f39d891b (origin/main)

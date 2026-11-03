@@ -6,7 +6,7 @@
 **Course:** DevOps Foundations & Continuous Integration  
 **Total Marks:** 40 Marks (7 Assessment Questions)  
 **Submission Date:** November 03, 2026  
-**Repository URL:** https://github.com/rohitraj/devops-lab1-ci  
+**Repository URL:** https://github.com/rohitraj1106/Devops-Lab-1  
 
 ---
 
@@ -130,7 +130,7 @@ git checkout main
 git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/enhance-ui-metrics' into main"
 
 # 7. Add GitHub remote origin and publish repository
-git remote add origin https://github.com/rohitraj/devops-lab1-ci.git
+git remote add origin https://github.com/rohitraj1106/Devops-Lab-1.git
 git push -u origin main
 git push -u origin feature/enhance-ui-metrics
 ```
@@ -309,7 +309,7 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 +-----------------------------------------------------------------------------------+
 |                            1. SOURCE CODE MANAGEMENT (VCS)                        |
 |   Developer Workspace -> git commit -> git push origin main                      |
-|   Repository: https://github.com/rohitraj/devops-lab1-ci                          |
+|   Repository: https://github.com/rohitraj1106/Devops-Lab-1                          |
 +------------------------------------------+----------------------------------------+
                                            |  HTTP POST Webhook Event
                                            v
@@ -372,7 +372,7 @@ In this experiment, an end-to-end automated pipeline was engineered for a contai
 
 ### Stage 1: Source Control Management (SCM) Checkout
 - **Purpose:** Securely clone the repository at the exact commit hash triggering the build.
-- **Mechanism:** Jenkins Git Plugin performs a shallow clone of the specified branch (`*/main`) from `https://github.com/rohitraj/devops-lab1-ci.git`.
+- **Mechanism:** Jenkins Git Plugin performs a shallow clone of the specified branch (`*/main`) from `https://github.com/rohitraj1106/Devops-Lab-1.git`.
 - **Command / Step:** `checkout scm`
 
 ### Stage 2: Build & Environment Isolation
@@ -826,7 +826,7 @@ git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/en
 ### Step 6: GitHub Remote Configuration & Push
 ```bash
 # Add GitHub remote origin
-git remote add origin https://github.com/rohitraj/devops-lab1-ci.git
+git remote add origin https://github.com/rohitraj1106/Devops-Lab-1.git
 
 # Push main branch with upstream tracking
 git push -u origin main
@@ -898,7 +898,7 @@ In the GitHub repository settings (**Settings -> Webhooks -> Add webhook**):
 5. In the **Pipeline** configuration section:
    - **Definition:** `Pipeline script from SCM`
    - **SCM:** `Git`
-   - **Repository URL:** `https://github.com/rohitraj/devops-lab1-ci.git`
+   - **Repository URL:** `https://github.com/rohitraj1106/Devops-Lab-1.git`
    - **Credentials:** GitHub Personal Access Token / SSH credentials
    - **Branch Specifier:** `*/main`
    - **Script Path:** `Jenkinsfile`
@@ -923,7 +923,7 @@ Verbatim console output log proving successful Git checkout and automated execut
 
 ```
 Started by GitHub push by rohitraj
-Obtained Jenkinsfile from git https://github.com/rohitraj/devops-lab1-ci.git
+Obtained Jenkinsfile from git https://github.com/rohitraj1106/Devops-Lab-1.git
 [Pipeline] Start of Pipeline
 [Pipeline] node
 Running on Jenkins in /var/lib/jenkins/workspace/devops-lab1-ci
@@ -941,7 +941,7 @@ The recommended git tool is: NONE
 using credential github-auth-token
  > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/devops-lab1-ci/.git # timeout=10
 Fetching changes from the remote Git repository
- > git config remote.origin.url https://github.com/rohitraj/devops-lab1-ci.git # timeout=10
+ > git config remote.origin.url https://github.com/rohitraj1106/Devops-Lab-1.git # timeout=10
 Fetching upstream changes from origin
  > git fetch --tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
 Checking out Revision 93a862a2b9f39d891b (origin/main)

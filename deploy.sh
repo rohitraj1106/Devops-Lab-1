@@ -74,3 +74,4 @@ else
     docker logs ${APP_NAME}
     exit 1
 fi
+

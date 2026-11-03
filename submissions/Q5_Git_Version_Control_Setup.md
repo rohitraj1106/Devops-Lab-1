@@ -86,7 +86,7 @@ git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/en
 ### Step 6: GitHub Remote Configuration & Push
 ```bash
 # Add GitHub remote origin
-git remote add origin https://github.com/rohitraj/devops-lab1-ci.git
+git remote add origin https://github.com/rohitraj1106/Devops-Lab-1.git
 
 # Push main branch with upstream tracking
 git push -u origin main

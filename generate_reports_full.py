@@ -209,3 +209,4 @@ def build_pdf(filename, story):
     return filepath
 
 print("Report generator baseline ready.")
+

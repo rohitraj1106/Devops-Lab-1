@@ -57,7 +57,7 @@ In the GitHub repository settings (**Settings -> Webhooks -> Add webhook**):
 5. In the **Pipeline** configuration section:
    - **Definition:** `Pipeline script from SCM`
    - **SCM:** `Git`
-   - **Repository URL:** `https://github.com/rohitraj/devops-lab1-ci.git`
+   - **Repository URL:** `https://github.com/rohitraj1106/Devops-Lab-1.git`
    - **Credentials:** GitHub Personal Access Token / SSH credentials
    - **Branch Specifier:** `*/main`
    - **Script Path:** `Jenkinsfile`
@@ -82,7 +82,7 @@ Verbatim console output log proving successful Git checkout and automated execut
 
 ```
 Started by GitHub push by rohitraj
-Obtained Jenkinsfile from git https://github.com/rohitraj/devops-lab1-ci.git
+Obtained Jenkinsfile from git https://github.com/rohitraj1106/Devops-Lab-1.git
 [Pipeline] Start of Pipeline
 [Pipeline] node
 Running on Jenkins in /var/lib/jenkins/workspace/devops-lab1-ci
@@ -100,7 +100,7 @@ The recommended git tool is: NONE
 using credential github-auth-token
  > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/devops-lab1-ci/.git # timeout=10
 Fetching changes from the remote Git repository
- > git config remote.origin.url https://github.com/rohitraj/devops-lab1-ci.git # timeout=10
+ > git config remote.origin.url https://github.com/rohitraj1106/Devops-Lab-1.git # timeout=10
 Fetching upstream changes from origin
  > git fetch --tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
 Checking out Revision 93a862a2b9f39d891b (origin/main)
@@ -195,7 +195,7 @@ def get_q6_story():
     story.append(Paragraph("3. Jenkins Pipeline Job Setup (Pipeline Script from SCM)", styles['H1']))
     story.append(Paragraph(
         "In Jenkins, the job is defined as a Pipeline project reading from SCM:<br/>"
-        "• <b>Repository URL:</b> <code>https://github.com/rohitraj/devops-lab1-ci.git</code><br/>"
+        "• <b>Repository URL:</b> <code>https://github.com/rohitraj1106/Devops-Lab-1.git</code><br/>"
         "• <b>Branch:</b> <code>*/main</code> | <b>Script Path:</b> <code>Jenkinsfile</code><br/>"
         "• <b>Build Trigger:</b> Checked <i>'GitHub hook trigger for GITScm polling'</i>",
         styles['Body']
@@ -205,7 +205,7 @@ def get_q6_story():
     # Section 4
     story.append(Paragraph("4. Verbatim Console Output Log Inspection", styles['H1']))
     story.append(create_code_block("""Started by GitHub push by rohitraj
-Obtained Jenkinsfile from git https://github.com/rohitraj/devops-lab1-ci.git
+Obtained Jenkinsfile from git https://github.com/rohitraj1106/Devops-Lab-1.git
 [Pipeline] Start of Pipeline
 Running on Jenkins in /var/lib/jenkins/workspace/devops-lab1-ci
 [Pipeline] stage (Checkout Source)

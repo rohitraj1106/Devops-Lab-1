@@ -107,7 +107,7 @@ git checkout main
 git merge --no-ff feature/enhance-ui-metrics -m "merge: Merge branch 'feature/enhance-ui-metrics' into main"
 
 # 7. Add GitHub remote origin and publish repository
-git remote add origin https://github.com/rohitraj/devops-lab1-ci.git
+git remote add origin https://github.com/rohitraj1106/Devops-Lab-1.git
 git push -u origin main
 git push -u origin feature/enhance-ui-metrics
 ```
