@@ -24,6 +24,14 @@ class DevOpsAppTestCase(unittest.TestCase):
         self.assertIn("uptime_seconds", data)
         self.assertIn("version", data)
 
+    def test_metrics_endpoint(self):
+        """Test metrics endpoint returns valid simulated metrics."""
+        response = self.app.get('/metrics')
+        self.assertEqual(response.status_code, 200)
+        data = json.loads(response.data)
+        self.assertIn("cpu_usage_simulated", data)
+        self.assertIn("memory_usage_mb", data)
+
     def test_api_info_endpoint(self):
         """Test project info metadata endpoint."""
         response = self.app.get('/api/info')

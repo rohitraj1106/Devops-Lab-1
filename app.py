@@ -86,6 +86,15 @@ def health():
         "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat()
     }), 200
 
+@app.route("/metrics")
+def metrics():
+    return jsonify({
+        "cpu_usage_simulated": "12.4%",
+        "memory_usage_mb": 45.2,
+        "active_threads": 4,
+        "request_count": 142
+    }), 200
+
 @app.route("/api/info")
 def info():
     return jsonify({
